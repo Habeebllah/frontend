@@ -6,7 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,700&display=swap" rel="stylesheet">
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
   <body>
         <div class="container">
             <form method="get" action="" class="main-form">
@@ -14,13 +15,20 @@
 
             <div class="inputs">
                 <label>Username</label>
-                <div>
+                <div class="user-field">
+                    <span>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
                     <input type="text" placeholder="Enter username"/>
                 </div>
             </div>
             <div class="inputs">
                 <label>Password</label>
-                <div>
+
+                <div class="user-field">
+                    <span>
+                        <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                    </span>
                     <input type="password" placeholder="Enter password"/>
                 </div>
             </div>
@@ -28,6 +36,48 @@
                 <button type="submit" id="login-btn">Log In</button>
             </div>
             </form>
+           <!--  <ol class="list">
+                <li>Car</li>
+                <li>Book</li>
+                <li>Pen</li>
+                <li>Biro</li>
+                <li>Eraser</li>
+                <li>Ink</li>
+                <li>Paper</li>
+            </ol>
+
+            <ul class="unorder-list">
+                <li>Car</li>
+                <li>Book</li>
+                <li>Pen</li>
+                <li>Biro</li>
+                <li>Eraser</li>
+                <li>Ink</li>
+                <li>Paper</li>
+            </ul>
+
+            <table id="t-style">
+                <thead>
+                    <td>S/N</td>
+                    <td>Name</td>
+                    <td>Score</td>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>Habeeb</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tolu</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Babatunde</td>
+                    <td>50</td>
+                </tr>
+            </table> -->
         </div>  
   </body>
 </html>
