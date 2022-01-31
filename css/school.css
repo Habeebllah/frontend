@@ -105,3 +105,28 @@ body{
     color: #fff;
     border: none;
 }
+
+
+.swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: #C4C4C4;
+    opacity: inherit;
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination-horizontal .swiper-pagination-bullet-active{
+    background-color: #7B3F00;
+
+}
+
+.swiper-button-prev, .swiper-button-next{
+    background-color:  rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after{
+    color: #FAFAFA;
+    
+}
