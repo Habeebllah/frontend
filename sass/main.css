@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main div:nth-child(1) {
+  background-color: #44cef8;
+}
+
+.main div:nth-child(2) {
+  background-color: #19667e;
+}
+
+.main div:nth-child(3) {
+  background-color: #134757;
+}
+
+.main div {
+  width: 100vw;
+  height: 300px;
+}
+
+.main h4 {
+  color: #fff;
+}
+
+.main button {
+  background-color: #1207ab;
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */
