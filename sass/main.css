@@ -29,10 +29,19 @@ html, body {
 
 .main h4 {
   color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .main button {
   background-color: #1207ab;
   color: #fff;
+  padding: 20px 100px;
+  border: 1px solid #1207ab;
+}
+
+.main button:hover {
+  background-color: #fff;
+  color: #1207ab;
+  border: 1px solid #1207ab;
 }
 /*# sourceMappingURL=main.css.map */

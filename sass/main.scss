@@ -22,13 +22,18 @@
 
     h4{
         color: #fff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     button{
         background-color: $btn-bg-color;
-        color: $btn-color
-        
-
-
+        color: $btn-color;
+        padding: 20px 100px;
+        border: 1px solid $btn-border-color;      
+    }
+    button:hover{
+        background-color: $btn-hover-bg-color;
+        color: $btn-hover-color;
+        border: 1px solid $btn-border-hover-color;      
     }
 }
