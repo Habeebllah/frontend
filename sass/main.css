@@ -10,38 +10,71 @@ html, body {
       justify-content: space-around;
 }
 
-.main div:nth-child(1) {
+@media screen and (max-width: 768px) {
+  .main {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+.main .box:nth-child(1) {
   background-color: #44cef8;
 }
 
-.main div:nth-child(2) {
+.main .box:nth-child(2) {
   background-color: #19667e;
 }
 
-.main div:nth-child(3) {
+.main .box:nth-child(3) {
   background-color: #134757;
 }
 
-.main div {
+.main .box {
   width: 100vw;
   height: 300px;
 }
 
 .main h4 {
   color: #fff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
 }
 
-.main button {
+.main .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .btn button {
   background-color: #1207ab;
   color: #fff;
   padding: 20px 100px;
   border: 1px solid #1207ab;
 }
 
-.main button:hover {
+@media screen and (max-width: 700px) and (min-width: 600px), screen and (max-width: 500px) and (min-width: 400px) {
+  .main .btn button {
+    color: yellow;
+    background-color: pink;
+  }
+}
+
+.main .btn button:hover {
   background-color: #fff;
   color: #1207ab;
   border: 1px solid #1207ab;
+}
+
+.main_text {
+  font-size: 20px;
+  color: #fff;
+}
+
+.text {
+  background-color: blue;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,15 @@
+nav{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    .collapse{
+    justify-content: flex-end;
+    }
+}
+
+.contain{
+    display: flex;
+
+    .texts{
+        align-self: center;
+    }
+}

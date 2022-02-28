@@ -1,39 +1,146 @@
 @import "reset";
 @import "color";
 
-.main{
+.main {
+    @media screen and (max-width: 768px) {
+        display: grid;
+    }
     display: flex;
     justify-content: space-around;
 
-    div:nth-child(1){
-        background-color: $box1-bg-color;
-    }
-    div:nth-child(2){
-        background-color: $box2-bg-color;
-    }
-    div:nth-child(3){
-        background-color: $box3-bg-color;
-    }
+  
 
-    div{
-        width: 100vw;
-        height: 300px;
-    }
+  .box:nth-child(1) {
+    background-color: $box1-bg-color;
+  }
+  .box:nth-child(2) {
+    background-color: $box2-bg-color;
+  }
+  .box:nth-child(3) {
+    background-color: $box3-bg-color;
+  }
 
-    h4{
-        color: #fff;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
+  .box {
+    width: 100vw;
+    height: 300px;
+  }
 
-    button{
-        background-color: $btn-bg-color;
-        color: $btn-color;
-        padding: 20px 100px;
-        border: 1px solid $btn-border-color;      
+  h4 {
+    color: #fff;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    button {
+      background-color: $btn-bg-color;
+      color: $btn-color;
+      padding: 20px 100px;
+      border: 1px solid $btn-border-color;
+
+      @media screen and (max-width: 700px) and (min-width: 600px), screen and (max-width: 500px) and (min-width: 400px) {
+          color: yellow;
+          background-color: pink;
+      }
     }
-    button:hover{
-        background-color: $btn-hover-bg-color;
-        color: $btn-hover-color;
-        border: 1px solid $btn-border-hover-color;      
+    button:hover {
+      background-color: $btn-hover-bg-color;
+      color: $btn-hover-color;
+      border: 1px solid $btn-border-hover-color;
     }
+  }
+}
+
+
+
+.main_text{
+    font-size: 20px;
+    color: #fff
+}
+
+.text{
+    background-color: blue;
+}
+
+:root {
+  --form-control-color: rgb(229, 255, 0);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+form {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.form-control + .form-control {
+  margin-top: 1em;
+}
+
+.form-control:focus-within {
+  color: var(--form-control-color);
+}
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
 }
