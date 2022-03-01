@@ -1,22 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,800;1,400&display=swap");
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden !important;
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    overflow-x: hidden !important;
+  }
+}
+
 nav {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-nav .collapse {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+nav .collapse .form-c {
+  margin: auto;
 }
 
-.contain {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (max-width: 991px) {
+  nav .collapse .form-c {
+    display: none;
+  }
 }
 
-.contain .texts {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+nav .collapse .form-c form {
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+nav .collapse .form-c form input {
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: 300;
+}
+
+nav .collapse .form-c form input::-webkit-input-placeholder {
+  font-size: 15px;
+}
+
+nav .collapse .form-c form input:-ms-input-placeholder {
+  font-size: 15px;
+}
+
+nav .collapse .form-c form input::-ms-input-placeholder {
+  font-size: 15px;
+}
+
+nav .collapse .form-c form input::placeholder {
+  font-size: 15px;
+}
+
+nav .collapse .form-c form button {
+  background: none;
+  border: none;
+}
+
+nav .collapse .navbar-nav {
+  font-size: 15px;
+}
+
+nav .collapse .navbar-nav .nav-item {
+  padding: 0px 5px;
+}
+
+nav .collapse .navbar-nav .sign-up {
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  nav .collapse .navbar-nav .sign-up {
+    background-color: none;
+  }
+}
+
+nav .collapse .navbar-nav .sign-up:hover {
+  border: 1px solid #000;
+  color: #000;
+  background: #fff;
+}
+
+.first-section {
+  margin-top: 50px;
+  padding-top: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.first-section h3 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.first-section h6 {
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.first-section button {
+  padding: 20px 50px;
+  cursor: pointer;
+}
+
+.first-section button:hover {
+  color: #000;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+.first-section .imgs {
+  position: relative;
+}
+
+.first-section .imgs img:nth-child(1) {
+  position: absolute;
+  z-index: -1;
+  top: -460px;
+  right: -205px;
+}
+
+@media screen and (max-width: 991px) {
+  .first-section .imgs img:nth-child(1) {
+    display: none;
+  }
+}
+
+.first-section .imgs img:nth-child(2) {
+  position: absolute;
+  right: -50px;
+  top: -120px;
+}
+
+@media screen and (max-width: 991px) {
+  .first-section .imgs img:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .first-section .imgs img:nth-child(3) {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
