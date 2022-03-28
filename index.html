@@ -10,7 +10,7 @@
 </head>
   <body>
         <div class="container">
-            <form method="get" action="" class="main-form">
+            <div action="" class="main-form">
                 <h4>Login Page</h4>
 
             <div class="inputs">
@@ -19,7 +19,7 @@
                     <span>
                         <i class="fa fa-user" aria-hidden="true"></i>
                     </span>
-                    <input type="text" placeholder="Enter username"/>
+                    <input type="text" id="username" placeholder="Enter username"/>
                 </div>
             </div>
             <div class="inputs">
@@ -29,13 +29,13 @@
                     <span>
                         <i class="fa fa-unlock-alt" aria-hidden="true"></i>
                     </span>
-                    <input type="password" placeholder="Enter password"/>
+                    <input type="password" id="password" placeholder="Enter password"/>
                 </div>
             </div>
             <div class="btn-container">
-                <button type="submit" id="login-btn">Log In</button>
+                <button onclick="collectData()" id="login-btn">Log In</button>
             </div>
-            </form>
+        </div>
            <!--  <ol class="list">
                 <li>Car</li>
                 <li>Book</li>
@@ -79,5 +79,6 @@
                 </tr>
             </table> -->
         </div>  
+    <script src="js/main.js"></script>
   </body>
 </html>
